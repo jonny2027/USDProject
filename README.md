@@ -10,7 +10,7 @@ https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe
 * Next we are going to clone the source of USD from Github and use the release channel 
 https://github.com/PixarAnimationStudios/USD.git
 
-* Clone it to a directory anywhere on your computer, I always use C:\Development\ 
+* Clone it to a directory anywhere on your computer, I always use C:\Development\USD 
 
 * Next we need to setup some environment variables
 
@@ -21,7 +21,7 @@ https://github.com/PixarAnimationStudios/USD.git
 * Add the following
 
     * Variable name : "USDROOT"
-    * Variable value : "C:\USD"
+    * Variable value : "C:\Development\USDCompiled"
 
     * Variable name : "PythonPath"
     * Variable value : "%USDROOT%\lib\python;"
@@ -43,9 +43,9 @@ https://github.com/PixarAnimationStudios/USD.git
 
   * pip install PyOpenGL
 
-* Finally we are going to build the source using an easy python command, replace "C:\Development\USD\build_scripts" with a link to the USD folder you clone or downloaded from Git earlier
+* Finally we are going to build the source using a python command
 
-* python C:\Development\USD\build_scripts\build_usd.py "C:\USD"
+* python C:\Development\USD\build_scripts\build_usd.py "C:\Development\USDCompiled"
 
 * Thats it. We have everything read and you should be able to test the install by issuing one of the commands below
 
