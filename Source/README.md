@@ -1,8 +1,8 @@
 # USDProject
 
-## Adding a comment
+## Linking to USD
 
-In the first task we are going to look at adding a comment to meta data and saving out a USD file from a commandline C++ application
+In the first task we are going to look at setting up a command line C++ application that connects to the usd libraries we compiled previousl
 
 * Start by opening VS 2022/2019, filter language by C++ and select "Console App"
 
@@ -44,3 +44,9 @@ In the first task we are going to look at adding a comment to meta data and savi
     * C:\Development\USDCompiled\lib\usd_pcp.lib
     * C:\Development\USDCompiled\lib\usd_tf.lib
     * C:\Development\USDCompiled\lib\usd_gf.lib
+
+  * To test whether you have the correct library files and include directories added to the project you can add the following includes to you AddComment.cpp file after the include for "iostream"
+    * <pxr/usd/usd/stage.h>
+    * <pxr/usd/usdGeom/sphere.h>
+
+  * If everything is setup correctly you should see the familiar "Hello World!" ouput in the command promp
