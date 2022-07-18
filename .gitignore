@@ -34,3 +34,5 @@
 *.exe
 *.out
 *.app
+*.log
+Source/AddComment/x64/
